@@ -16,12 +16,12 @@
   <title> IVM </title>
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="bootstrap.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-  <!--owl slider stylesheet -->
+  <!-- owl slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!-- font awesome style -->
@@ -36,78 +36,75 @@
 
 <body>
 
-    <div class="video-bg">
-   <!-- <video src="2792967-uhd_2160_1440_25fps.mp4" autoplay muted loop></video>  -->
-        <video src="2792967-uhd_2160_1440_25fps.mp4" autoplay muted loop></video>
-        <div class="effects"></div>
-        <div class="blue-overlay"></div>
-        <div class="video-bg__content">
-            <div class="gradient-circle"></div>
-            <div id="viewCounter"><span id="counter">0</span>x views for you</div>
-            <div class="small-text">or get your money back</div>
-            <a href="#1" class="btn1 round-button">
-                <img src="arrow.png" alt="Arrow">
-            </a>
-        </div>
+  <div class="video-bg">
+    <video src="2792967-uhd_2160_1440_25fps.mp4" autoplay muted loop></video>
+    <div class="effects"></div>
+    <div class="blue-overlay"></div>
+    <div class="video-bg__content">
+      <div class="gradient-circle"></div>
+      <div id="viewCounter"><span id="counter">0</span>x views for you</div>
+      <div class="small-text">or get your money back</div>
+      <a href="#1" class="btn1 round-button">
+        <img src="arrow.png" alt="Arrow">
+      </a>
     </div>
+  </div>
 
-    <script>
-        let counter = 1; // Start from 1
-        const counterElement = document.getElementById('counter');
+  <script>
+    let counter = 1; // Start from 1
+    const counterElement = document.getElementById('counter');
 
-        function updateCounter() {
-            if (counter <= 3) {
-                counterElement.textContent = counter;
-                counter++;
-            } else {
-                clearInterval(counterInterval);
-            }
-        }
+    function updateCounter() {
+      if (counter <= 3) {
+        counterElement.textContent = counter;
+        counter++;
+      } else {
+        clearInterval(counterInterval);
+      }
+    }
 
-        // Delay before starting the counter (e.g., 2 seconds)
-        const delayBeforeStart = 50;
+    // Delay before starting the counter (e.g., 2 seconds)
+    const delayBeforeStart = 50;
 
-        setTimeout(() => {
-            const counterInterval = setInterval(updateCounter, 100); // Adjust the speed as needed
-        }, delayBeforeStart);
-    </script>
+    setTimeout(() => {
+      const counterInterval = setInterval(updateCounter, 100); // Adjust the speed as needed
+    }, delayBeforeStart);
+  </script>
 
+  <!-- header section starts -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.html">
+          <img src="fff.png" alt="IVM" style="height: 30px;">
+        </a>
 
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <img src="fff.png" alt="IVM" style="height: 30px;">
-          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> </span>
+        </button>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#1">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#0">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#2">Why Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#3">Team</a>
-              </li>
-  
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#1">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#0">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#2">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#3">Team</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
     <!-- end header section -->
   <!-- service section -->
   
